@@ -1,0 +1,409 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:text="@string/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Large"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp">
+            <Switch
+                android:id="@+id/emotionPolaritySwitch"
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:showText = "true"
+                android:textOff = "-"
+                android:textOn = "+"
+                android:text="@string/polarity"
+                android:layout_marginEnd="10dp" />
+            <TextView
+                android:id="@+id/emotionPolarityValueText"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="wrap_content"
+                android:text="@string/polarityValue"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000" />
+        </TableRow>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <!--
+        Removing Emotion Name text - looks like wasted space
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:text="@string/name" />
+        </TableRow>
+        -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RadioGroup
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/radioGroupLeft" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 1-1"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_1_color"
+                    android:buttonTint="@color/need_1_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 1-2"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_1_color"
+                    android:buttonTint="@color/need_1_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 1-3"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_1_color"
+                    android:buttonTint="@color/need_1_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 1-4"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_1_color"
+                    android:buttonTint="@color/need_1_color"
+                    android:layout_marginBottom="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 2-1"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_2_color"
+                    android:buttonTint="@color/need_2_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 2-2"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_2_color"
+                    android:buttonTint="@color/need_2_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 2-3"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_2_color"
+                    android:buttonTint="@color/need_2_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 2-4"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_2_color"
+                    android:buttonTint="@color/need_2_color"/>
+            </RadioGroup>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/radioGroupMiddle">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 3-1"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_3_color"
+                    android:buttonTint="@color/need_3_color" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 3-2"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_3_color"
+                    android:buttonTint="@color/need_3_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 3-3"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_3_color"
+                    android:buttonTint="@color/need_3_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 3-4"
+                    android:checked="false"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_3_color"
+                    android:buttonTint="@color/need_3_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 4-1"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_4_color"
+                    android:buttonTint="@color/need_4_color" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 4-2"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_4_color"
+                    android:buttonTint="@color/need_4_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 4-3"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_4_color"
+                    android:buttonTint="@color/need_4_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 4-4"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_4_color"
+                    android:buttonTint="@color/need_4_color"/>
+            </RadioGroup>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_weight=".33"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/radioGroupRight">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 5-1"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_5_color"
+                    android:buttonTint="@color/need_5_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 5-2"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_5_color"
+                    android:buttonTint="@color/need_5_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 5-3"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_5_color"
+                    android:buttonTint="@color/need_5_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 5-4"
+                    android:checked="false"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_5_color"
+                    android:buttonTint="@color/need_5_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 6-1"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_6_color"
+                    android:buttonTint="@color/need_6_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 6-2"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_6_color"
+                    android:buttonTint="@color/need_6_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 6-3"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_6_color"
+                    android:buttonTint="@color/need_6_color"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotion 6-4"
+                    android:checked="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/need_6_color"
+                    android:buttonTint="@color/need_6_color"/>
+            </RadioGroup>
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:text="@string/intensity" />
+
+            <SeekBar
+                android:id="@+id/intensityLevelSeekBar"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="10"/>
+
+            <TextView
+                android:id="@+id/intensityLevelText"
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:text="@string/intensityLevelDefault" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+            <EditText
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:hint="Optional description"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:id="@+id/optionalTextView"/>
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="Clear" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:enabled="false"
+                android:id="@+id/saveButton"/>
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+    </TableLayout>
+</LinearLayout>

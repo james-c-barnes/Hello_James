@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hello James</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title">Gemotionsᵀᴹ Emotion Tracker</string>
+    <string name="polarity">Emotion Polarity</string>
+    <string name="name">Emotion Name</string>
+    <string name="polarityValue">negative</string>
+    <string name="intensity">Emotion Intensity</string>
+    <string name="intensityLevelDefault">1</string>
+</resources>

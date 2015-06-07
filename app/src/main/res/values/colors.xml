@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="need_1_color">#ff0000c0</color>
+    <color name="need_2_color">#ffc0bb00</color>
+    <color name="need_3_color">#ff00c000</color>
+    <color name="need_4_color">#ffc00000</color>
+    <color name="need_5_color">#ffc0c0c0</color>
+    <color name="need_6_color">#ff000000</color>
+</resources>
